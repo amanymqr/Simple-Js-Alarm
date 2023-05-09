@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Indie+Flower&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* min-height: 100vh; */
+    background-color: #cb5d4c;
+    font-family: 'Caveat', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body,
+.alarm,
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 90px; */
+}
+
+.alarm {
+    background-color: #fff;
+    padding: 30px 30px 38px;
+    border-radius: 20px;
+    flex-direction: column;
+    width: 480px;
+    margin-top: 120px;
+
+}
+
+.alarm img {
+    max-width: 140px;
+    padding-top: 20px;
+}
+
+.alarm h1 {
+    font-size: 38px;
+    margin: 20px 0;
+}
+
+.alarm .content {
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+.content.disable .col {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.content.disable {
+    cursor: no-drop;
+}
+
+.content .col {
+    border-radius: 5px;
+    border: 1px solid #c1c0c0;
+    width: calc(100%/3 - 5px);
+    padding: 0 10px;
+    text-align: center;
+}
+
+.col option {
+    border: none;
+
+}
+
+.col select {
+    font-size: 19px;
+    border: none;
+    height: 53px;
+    width: 100%;
+    background-color: none;
+}
+
+
+.alarm button {
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 17px 0;
+    border-radius: 5px;
+    background-color: #cb5d4c;
+    color: #fff;
+    cursor: pointer;
+}
